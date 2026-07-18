@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestta Advisory | Inteligência Estratégica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Gestta <span>Advisory</span></div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato" class="btn-nav">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Estratégia Híbrida e Inteligência de Dados</h1>
+            <p>Transformamos dados complexos em decisões executáveis de alto nível para impulsionar o seu negócio rumo ao futuro.</p>
+            <button id="btn-cta" class="btn-primary">Inscreva-se na Mentoria Exclusiva</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>A Gestta Advisory une administração de alto nível, tecnologia e metodologias estruturadas. Acreditamos que, sem método, a criatividade se perde. Por isso, entregamos inteligência analítica focada em eficiência operacional e crescimento sustentável.</p>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <h2>Solicite uma Análise Estratégica</h2>
+        <p>Preencha os dados abaixo e nossa equipe entrará em contato.</p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required placeholder="Ex: Vanilson de Lima">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Corporativo</label>
+                <input type="email" id="email" required placeholder="seu@email.com">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group cep-group">
+                    <label for="cep">CEP (Apenas números)</label>
+                    <input type="text" id="cep" maxlength="8" required placeholder="00000000">
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" readonly placeholder="Automático">
+                </div>
+                <div class="form-group estado-group">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" readonly placeholder="UF">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Como podemos ajudar seu negócio?</label>
+                <textarea id="mensagem" rows="4" required placeholder="Descreva brevemente seu desafio..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gestta Advisory. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
